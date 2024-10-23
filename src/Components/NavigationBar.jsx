@@ -1,16 +1,24 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap"
+import Container from 'react-bootstrap/Container';
+import { Nav, Navbar } from "react-bootstrap";
 
 function NavigationBar() {
-    return (
-        <Navbar>
-            <Container>
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#Contact">Contact</Nav.Link>
-                <Nav.Link href="#About">About</Nav.Link>
-            </Container>
-        </Navbar>
-    )
+  return (
+    <Navbar expand="md" variant='dark' bg='success'>
+      <Container>
+        <Nav className='mx-auto'>
+            <Nav.Link href='#home'>
+                Home
+            </Nav.Link>
+            <Nav.Link href='#about'>
+                About
+            </Nav.Link>
+            <Nav.Link href='#contact'>
+                Contact
+            </Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default NavigationBar; 
+export default NavigationBar;
