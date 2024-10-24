@@ -3,7 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 function NavigationBar() {
   return (
-    <Navbar expand="md" variant='dark' bg='success'>
+    <Navbar expand="md" variant='light'>
       <Container>
         <Nav className='mx-auto'>
             <Nav.Link href='#home'>
