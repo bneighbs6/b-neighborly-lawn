@@ -12,12 +12,12 @@ function App() {
         <Header />
       </div>
 
-      <div id="logo">
-        <Logo />
-      </div>
-
       <div id="nav-bar">
         <NavigationBar />
+      </div>
+
+      <div id="logo">
+        <Logo />
       </div>
 
       <div id="footer">
