@@ -7,7 +7,7 @@ function HomePage() {
   function handleClick() {
     console.log("button clicked");
   }
-  
+
   return (
     <>
       <div className="home-header">
@@ -18,7 +18,7 @@ function HomePage() {
           <Col>
             <Card className="home-page-card">
               <Card.Body>
-                <Card.Title>Winter Is Coming</Card.Title>
+                <h2>Winter Is Coming</h2>
                 <h4>Don't feel like shoveling snow all winter?</h4>
                 <p>
                   <Button
@@ -36,7 +36,8 @@ function HomePage() {
           <Col>
             <Card className="home-page-card">
               <Card.Body>
-                <Card.Title>We want to mow your lawn</Card.Title>
+                <h2>We want to mow your lawn</h2>
+                <h4>Tired of mowing your lawn?</h4>
                 <p>
                   <Button
                     style={{ backgroundColor: "#003f85" }}
