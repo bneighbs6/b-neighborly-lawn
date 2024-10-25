@@ -23,8 +23,7 @@ code {
 
 .home-page-card {
   text-align: center;
-  width: 33%;
-  
+  width: 75%;
 }
 
 #nav-bar {
@@ -34,7 +33,6 @@ code {
 #footer {
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
   background-color: #003f85;
   padding: 20px;

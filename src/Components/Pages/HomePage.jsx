@@ -3,10 +3,11 @@ import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function HomePage() {
+  // TODO: Have handleClick take user to a form to fill out request
   function handleClick() {
     console.log("button clicked");
   }
-
+  
   return (
     <>
       <div className="home-header">
@@ -14,7 +15,7 @@ function HomePage() {
       </div>
       <Container>
         <Row>
-          <Col md={6}> {/* Each card will take up half the width on medium and larger screens */}
+          <Col>
             <Card className="home-page-card">
               <Card.Body>
                 <Card.Title>Winter Is Coming</Card.Title>
@@ -26,12 +27,13 @@ function HomePage() {
                   >
                     Click Here
                   </Button>
-                  to receive a quote for simple snow shoveling done professionally.
+                  to receive a quote for simple snow shoveling done
+                  professionally.
                 </p>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6}> {/* Each card will take up half the width on medium and larger screens */}
+          <Col>
             <Card className="home-page-card">
               <Card.Body>
                 <Card.Title>We want to mow your lawn</Card.Title>
