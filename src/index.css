@@ -21,6 +21,12 @@ code {
   text-align: center;
 }
 
+.home-page-card {
+  text-align: center;
+  width: 33%;
+  
+}
+
 #nav-bar {
   background-color: #5fff33;
 }
