@@ -4,6 +4,7 @@ import NavigationBar from './Components/NavigationBar';
 import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from './Components/Logo';
+import HomePage from './Components/Pages/HomePage';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
 
       <div id="logo">
         <Logo />
+      </div>
+
+      <div>
+        <HomePage />
       </div>
 
       <div id="footer">
