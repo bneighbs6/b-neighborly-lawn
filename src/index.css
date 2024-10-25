@@ -17,6 +17,10 @@ code {
     monospace;
 }
 
+.home-header {
+  text-align: center;
+}
+
 #nav-bar {
   background-color: #5fff33;
 }
