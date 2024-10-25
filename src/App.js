@@ -5,30 +5,35 @@ import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from './Components/Logo';
 import HomePage from './Components/Pages/HomePage';
+import RequestForm from './Components/RequestForm';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <div id="header">
-        <Header />
-      </div>
+    <Router>
+      <div className="App">
+        <div id="header">
+          <Header />
+        </div>
 
-      <div id="nav-bar">
-        <NavigationBar />
-      </div>
+        <div id="nav-bar">
+          <NavigationBar />
+        </div>
 
-      <div id="logo">
-        <Logo />
-      </div>
+        <div id="logo">
+          <Logo />
+        </div>
 
-      <div>
-        <HomePage />
-      </div>
+        <Routes>
+          <Route exact={true} path="/" element={<HomePage />}></Route>
+          <Route path="/request-form" element={<RequestForm />}></Route>
+        </Routes>
 
-      <div id="footer">
-        <Footer />
+        <div id="footer">
+          <Footer />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
