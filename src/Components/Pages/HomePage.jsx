@@ -6,10 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function HomePage() {
   const navigate = useNavigate(); 
 
-  // TODO: Have handleClick take user to a form to fill out request
   function handleClick() {
-    console.log("button clicked");
-    alert("Button Clicked. This will take you to our request form.")
+    alert("This will take you to our request form. Click OK to continue.")
     navigate("/request-form");
   }
 

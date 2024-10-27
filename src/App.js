@@ -26,12 +26,15 @@ function App() {
 
         <Routes>
           <Route exact={true} path="/" element={<HomePage />}></Route>
+          <Route path="/services"></Route>
+          <Route path="/about"></Route>
           <Route path="/request-form" element={<RequestForm />}></Route>
         </Routes>
 
-        <div id="footer">
+{/* Commented out the footer so I can see the rest of request form  */}
+        {/* <div id="footer">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </Router>
   );
