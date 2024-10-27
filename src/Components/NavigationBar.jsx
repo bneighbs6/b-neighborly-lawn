@@ -6,16 +6,16 @@ function NavigationBar() {
     <Navbar expand="md" variant='light'>
       <Container>
         <Nav className='mx-auto'>
-            <Nav.Link href='#home'>
+            <Nav.Link href='/' to="/">
                 Home
             </Nav.Link>
-            <Nav.Link href='#services'>
+            <Nav.Link href='/services'>
                 Services
             </Nav.Link>
-            <Nav.Link href='#about'>
+            <Nav.Link href='/about'>
                 About
             </Nav.Link>
-            <Nav.Link href='#contact'>
+            <Nav.Link href='/request-form'>
                 Contact
             </Nav.Link>
         </Nav>
