@@ -6,6 +6,9 @@ function RequestForm() {
     first_name: "",
     last_name: "",
     email: "",
+    street_address: "",
+    zip_code: "",
+    choose_service: "",
     request: "",
   };
 
@@ -30,6 +33,14 @@ function RequestForm() {
 
   function handleEmailChange(e) {
     setForm({ ...form, email: e.target.value });
+  }
+
+  function handleStreetAddressChange(e) {
+    setForm({ ...form, street_address: e.target.value });
+  }
+
+  function handleZipCodeChange(e) {
+    setForm({ ...form, zip_code: e.target.value })
   }
 
   function handleRequestChange(e) {
@@ -69,11 +80,31 @@ function RequestForm() {
         ></Form.Control>
       </Form.Group>
       <Form.Group className="mb-3">
+        <Form.Label>Street Address</Form.Label>
+        <Form.Control
+          type="text"
+          required
+          placeholder="Enter your street address"
+          value={form.street_address}
+          onChange={handleStreetAddressChange}
+        ></Form.Control>
+      </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Label>Zip Code</Form.Label>
+        <Form.Control
+          type="text"
+          required
+          placeholder="Enter your zip code"
+          value={form.zip_code}
+          onChange={handleZipCodeChange}
+        ></Form.Control>
+      </Form.Group>
+      <Form.Group className="mb-3">
         <Form.Label>Tell us what you are looking for from us</Form.Label>
         <Form.Control
           as="textarea"
           required
-          rows={4}
+          rows={2}
           value={form.request}
           onChange={handleRequestChange}
           placeholder="e.g. 'I am looking for someone to mow my lawn twice a month from May-October'"
