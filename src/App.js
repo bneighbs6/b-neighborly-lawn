@@ -31,10 +31,10 @@ function App() {
           <Route path="/request-form" element={<RequestForm />}></Route>
         </Routes>
 
-{/* Commented out the footer so I can see the rest of request form  */}
-        {/* <div id="footer">
+        <div id="footer">
           <Footer />
-        </div> */}
+        </div>
+        
       </div>
     </Router>
   );
