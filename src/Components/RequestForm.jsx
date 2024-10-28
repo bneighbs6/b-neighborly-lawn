@@ -106,15 +106,21 @@ function RequestForm() {
         ></Form.Control>
       </Form.Group>
       <Form.Group className="mb-3">
-        <Dropdown onSelect={handleChooseServiceChange}>
-          <Dropdown.Toggle as={Button}>
-               {serviceChoice || "Choose an Option"} 
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item eventKey={"Lawn Mowing"}>Lawn Mowing</Dropdown.Item>
-            <Dropdown.Item eventKey={"Snow Shoveling"}>Snow Shoveling</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <div id="dropdown-menu">
+          <Dropdown onSelect={handleChooseServiceChange}>
+            <Dropdown.Toggle style={{backgroundColor: "#003f85"}}>
+              {serviceChoice || "* Choose an Option"}
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item eventKey={"Lawn Mowing"}>
+                Lawn Mowing
+              </Dropdown.Item>
+              <Dropdown.Item eventKey={"Snow Shoveling"}>
+                Snow Shoveling
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Tell us what you are looking for from us</Form.Label>
