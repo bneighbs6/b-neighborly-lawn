@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Dropdown, Form } from "react-bootstrap";
 
 function RequestForm() {
   const initialFormState = {
@@ -13,6 +13,7 @@ function RequestForm() {
   };
 
   const [form, setForm] = useState({ ...initialFormState });
+  const [serviceChoice, setServiceChoice] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -41,6 +42,11 @@ function RequestForm() {
 
   function handleZipCodeChange(e) {
     setForm({ ...form, zip_code: e.target.value })
+  }
+
+  function handleChooseServiceChange(eventKey) {
+    setServiceChoice(eventKey);
+    setForm({ ...form, choose_service: eventKey });
   }
 
   function handleRequestChange(e) {
@@ -98,6 +104,17 @@ function RequestForm() {
           value={form.zip_code}
           onChange={handleZipCodeChange}
         ></Form.Control>
+      </Form.Group>
+      <Form.Group className="mb-3">
+        <Dropdown onSelect={handleChooseServiceChange}>
+          <Dropdown.Toggle as={Button}>
+               {serviceChoice || "Choose an Option"} 
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item eventKey={"Lawn Mowing"}>Lawn Mowing</Dropdown.Item>
+            <Dropdown.Item eventKey={"Snow Shoveling"}>Snow Shoveling</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Tell us what you are looking for from us</Form.Label>
