@@ -8,7 +8,7 @@ function Logo() {
                 <span className="inner-circle"></span>
                 <div className="text-container">
                     <div className="neighbors-word">Neighbors</div>
-                    <div className="lawn-service-word">Lawn Service</div>
+                    <div className="lawn-service-word">Lawn Service Logo</div>
                 </div>
             </span>
         </div>

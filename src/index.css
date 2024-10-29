@@ -12,11 +12,16 @@ body {
   display: flex; 
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Libre Baskerville", sans-serif; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#header {
+  font-family: "Dynapuff", sans-serif; 
 }
 
 .home-header {
@@ -25,7 +30,9 @@ code {
 
 .home-page-card {
   text-align: center;
-  width: 75%;
+  width: 100%;
+  margin: 20px 20px;
+  padding: 20px 20px;
 }
 
 #nav-bar {

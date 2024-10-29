@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import RequestForm from "../RequestForm";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function HomePage() {
-  const navigate = useNavigate(); 
+  const formRef = useRef(null);
+  const navigate= useNavigate(); 
 
   function handleClick() {
     alert("This will take you to our request form. Click OK to continue.")
@@ -35,8 +37,6 @@ function HomePage() {
                 </p>
               </Card.Body>
             </Card>
-          </Col>
-          <Col>
             <Card className="home-page-card">
               <Card.Body>
                 <h2>We want to mow your lawn</h2>
@@ -53,10 +53,15 @@ function HomePage() {
               </Card.Body>
             </Card>
           </Col>
+          <Col>
+          <div>
+            <RequestForm />
+          </div>
+          </Col>
         </Row>
       </Container>
     </>
   );
 }
 
-export default HomePage; 
+export default HomePage;
