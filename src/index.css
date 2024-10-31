@@ -12,7 +12,7 @@ body {
   display: flex; 
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Libre Baskerville", sans-serif; 
+  font-family: "Roboto Condensed", sans-serif; 
 }
 
 code {
@@ -21,7 +21,7 @@ code {
 }
 
 #header {
-  font-family: "Dynapuff", sans-serif; 
+  font-family: "Roboto Condensed", sans-serif; 
 }
 
 .home-header {

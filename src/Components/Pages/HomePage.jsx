@@ -1,11 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import RequestForm from "../RequestForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function HomePage() {
-  const formRef = useRef(null);
   const navigate= useNavigate(); 
 
   function handleClick() {
