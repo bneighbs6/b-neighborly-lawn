@@ -5,8 +5,10 @@ import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from './Components/Logo';
 import HomePage from './Components/Pages/HomePage';
+import ServicePage from './Components/Pages/ServicePage';
 import RequestForm from './Components/RequestForm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import AboutPage from './Components/Pages/AboutPage';
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
 
         <Routes>
           <Route exact={true} path="/" element={<HomePage />}></Route>
-          <Route path="/services"></Route>
-          <Route path="/about"></Route>
+          <Route path="/services" element={<ServicePage />}></Route>
+          <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/request-form" element={<RequestForm />}></Route>
         </Routes>
 
