@@ -4,11 +4,11 @@ import NavigationBar from './Components/NavigationBar';
 import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from './Components/Logo';
-import HomePage from './Components/Pages/HomePage';
-import ServicePage from './Components/Pages/ServicePage';
+import HomePage from '../src/Pages/HomePage';
+import ServicePage from '../src/Pages/ServicePage';
 import RequestForm from './Components/RequestForm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import AboutPage from './Components/Pages/AboutPage';
+import AboutPage from '../src/Pages/AboutPage';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import RequestForm from "../RequestForm";
+import RequestForm from "../Components/RequestForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function HomePage() {
