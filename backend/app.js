@@ -30,7 +30,7 @@ app.use(morgan("dev"));
 
 // welcome route 
 app.use("/", (req, res, next) => {
-    res.send("Welcome to the backend homepage for exercise library")
+    res.send("Welcome to the backend homepage for my lawn service database")
 })
 
 app.use(notFound);
