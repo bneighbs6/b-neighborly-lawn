@@ -27,6 +27,9 @@ const morgan = require("morgan");
 app.use(morgan("dev"));
 
 // Route set up 
+app.use("/email", (req, res, next) => {
+    res.send("Set up b/e router to handle data received from request form. This data will be sent to the work email. ")
+})
 
 // welcome route 
 app.use("/", (req, res, next) => {
