@@ -12,6 +12,7 @@ const notFound = require("./errors/notFound");
 const errorHandler = require("./errors/errorHandler");
 
 // Require exercises router
+const requestFormRouter = require("../src/requestForm/requestForm.router");
 
 // Express package exports a function, when invoked, a new Express app is created and assigned to a variable
 const app = express();
@@ -27,9 +28,7 @@ const morgan = require("morgan");
 app.use(morgan("dev"));
 
 // Route set up 
-app.use("/email", (req, res, next) => {
-    res.send("Set up b/e router to handle data received from request form. This data will be sent to the work email. ")
-})
+app.use("/request-form", requestFormRouter);
 
 // welcome route 
 app.use("/", (req, res, next) => {

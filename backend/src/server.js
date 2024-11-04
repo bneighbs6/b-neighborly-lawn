@@ -7,3 +7,5 @@ const app = require("./app");
 const listener = () => console.log(`Listening on PORT ${PORT}!`);
 
 app.listen(PORT, listener);
+
+// TODO: Create email router, service, and controller
