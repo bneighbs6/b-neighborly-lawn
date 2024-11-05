@@ -1,17 +1,13 @@
 import React from "react";
 import "../../src/index.css";
+import LogoImage from "../Logo.png";
 
 function Logo() {
     return (
-        <div className="logo-container">
-            <span className="outer-circle">
-                <span className="inner-circle"></span>
-                <div className="text-container">
-                    <div className="neighbors-word">B. Neighborly</div>
-                    <div className="lawn-service-word">Lawn Services Logo</div>
-                </div>
-            </span>
-        </div>
+      // Add "../../Logo.png" here
+      <div className="logo-container">
+        <img src={LogoImage} alt="Logo" className="logo" />
+      </div>
     );
 }
 
