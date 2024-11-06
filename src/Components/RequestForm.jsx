@@ -14,6 +14,27 @@ function RequestForm() {
   const [form, setForm] = useState({ ...initialFormState });
   const [serviceChoice, setServiceChoice] = useState("");
 
+  async function handleSubmit(e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Send form data to Formspree
+    const response = await fetch("https://formspree.io/f/mqakqbqb", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (response.ok) {
+      alert("Your form has been submitted. You will receive an email responding to your request within 24 hours.");
+      setForm({ ...initialFormState }); // Reset the form
+      setServiceChoice(""); // Reset the service choice
+    } else {
+      alert("There was a problem with your submission. Please try again.");
+    }
+  }
 
   function handleNameChange(e) {
     setForm({ ...form, full_name: e.target.value });
@@ -41,7 +62,7 @@ function RequestForm() {
   }
 
   return (
-    <Form action="https://formspree.io/f/mqakqbqb" method="POST">
+    <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
         <Form.Label>Full Name</Form.Label>
         <Form.Control
