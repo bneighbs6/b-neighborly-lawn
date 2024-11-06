@@ -1,28 +1,22 @@
 import React, { useState } from "react";
 import { Button, Dropdown, Form } from "react-bootstrap";
-import { useForm } from "@formspree/react"
 
 function RequestForm() {
   const initialFormState = {
-    first_name: "",
-    last_name: "",
+    full_name: "",
     email: "",
     street_address: "",
     zip_code: "",
     choose_service: "",
     request: "",
   };
-  
+
   const [form, setForm] = useState({ ...initialFormState });
   const [serviceChoice, setServiceChoice] = useState("");
 
 
-  function handleFirstNameChange(e) {
-    setForm({ ...form, first_name: e.target.value });
-  }
-
-  function handleLastNameChange(e) {
-    setForm({ ...form, last_name: e.target.value });
+  function handleNameChange(e) {
+    setForm({ ...form, full_name: e.target.value });
   }
 
   function handleEmailChange(e) {
@@ -49,25 +43,14 @@ function RequestForm() {
   return (
     <Form action="https://formspree.io/f/mqakqbqb" method="POST">
       <Form.Group className="mb-3">
-        <Form.Label>First Name</Form.Label>
+        <Form.Label>Full Name</Form.Label>
         <Form.Control
-          name="first_name" // Changed to match the state key
+          name="full_name" // Changed to match the state key
           type="text"
           required
-          value={form.first_name}
-          onChange={handleFirstNameChange}
-          placeholder="Enter your first name"
-        />
-      </Form.Group>
-      <Form.Group className="mb-3">
-        <Form.Label>Last Name</Form.Label>
-        <Form.Control
-          name="last_name" // Changed to match the state key
-          type="text"
-          required
-          value={form.last_name}
-          onChange={handleLastNameChange}
-          placeholder="Enter your last name"
+          value={form.full_name}
+          onChange={handleNameChange}
+          placeholder="Enter your name"
         />
       </Form.Group>
       <Form.Group className="mb-3">
