@@ -17,11 +17,8 @@ function RequestForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    const abortController = new AbortController();
-
-    alert("Form submitted. Press OK to continue.");
+    // Reset the form state after submission
     setForm({ ...initialFormState });
-    return () => abortController.abort;
   }
 
   function handleFirstNameChange(e) {
@@ -41,7 +38,7 @@ function RequestForm() {
   }
 
   function handleZipCodeChange(e) {
-    setForm({ ...form, zip_code: e.target.value })
+    setForm({ ...form, zip_code: e.target.value });
   }
 
   function handleChooseServiceChange(eventKey) {
@@ -54,70 +51,71 @@ function RequestForm() {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <Form.Group classname="mb-3">
+    <Form onSubmit={handleSubmit} action="https://formsubmit.co/el/hewale" method="POST">
+      <Form.Group className="mb-3">
         <Form.Label>First Name</Form.Label>
         <Form.Control
+          name="first_name" // Changed to match the state key
           type="text"
           required
           value={form.first_name}
           onChange={handleFirstNameChange}
           placeholder="Enter your first name"
-        ></Form.Control>
+        />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Last Name</Form.Label>
         <Form.Control
+          name="last_name" // Changed to match the state key
           type="text"
           required
-          placeholder="Enter your last name"
           value={form.last_name}
           onChange={handleLastNameChange}
-        ></Form.Control>
+          placeholder="Enter your last name"
+        />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Email Address</Form.Label>
         <Form.Control
+          name="email" // Changed to match the state key
           type="email"
           required
-          placeholder="Enter your email"
           value={form.email}
           onChange={handleEmailChange}
-        ></Form.Control>
+          placeholder="Enter your email"
+        />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Street Address</Form.Label>
         <Form.Control
+          name="street_address" // Changed to match the state key
           type="text"
           required
-          placeholder="Enter your street address"
           value={form.street_address}
           onChange={handleStreetAddressChange}
-        ></Form.Control>
+          placeholder="Enter your street address"
+        />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Zip Code</Form.Label>
         <Form.Control
+          name="zip_code" // Changed to match the state key
           type="text"
           required
-          placeholder="Enter your zip code"
           value={form.zip_code}
           onChange={handleZipCodeChange}
-        ></Form.Control>
+          placeholder="Enter your zip code"
+        />
       </Form.Group>
       <Form.Group className="mb-3">
         <div id="dropdown-menu">
           <Dropdown onSelect={handleChooseServiceChange}>
-            <Dropdown.Toggle style={{backgroundColor: "#003f85"}}>
+            <Dropdown.Toggle style={{ backgroundColor: "#003f85" }}>
               {serviceChoice || "* Choose an Option"}
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item eventKey={"Lawn Mowing"}>
-                Lawn Mowing
-              </Dropdown.Item>
-              <Dropdown.Item eventKey={"Snow Shoveling"}>
-                Snow Shoveling
-              </Dropdown.Item>
+              <Dropdown.Item eventKey={"Lawn Mowing"}>Lawn Mowing</Dropdown.Item>
+              <Dropdown.Item eventKey={"Snow Shoveling"}>Snow Shoveling</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
@@ -125,6 +123,7 @@ function RequestForm() {
       <Form.Group className="mb-3">
         <Form.Label>Tell us what you are looking for from us</Form.Label>
         <Form.Control
+          name="message"
           as="textarea"
           required
           rows={2}
