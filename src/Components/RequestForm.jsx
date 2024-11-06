@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Dropdown, Form } from "react-bootstrap";
+import { useForm } from "@formspree/react"
 
 function RequestForm() {
   const initialFormState = {
@@ -11,15 +12,10 @@ function RequestForm() {
     choose_service: "",
     request: "",
   };
-
+  
   const [form, setForm] = useState({ ...initialFormState });
   const [serviceChoice, setServiceChoice] = useState("");
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    // Reset the form state after submission
-    setForm({ ...initialFormState });
-  }
 
   function handleFirstNameChange(e) {
     setForm({ ...form, first_name: e.target.value });
@@ -51,7 +47,7 @@ function RequestForm() {
   }
 
   return (
-    <Form onSubmit={handleSubmit} action="https://formsubmit.co/el/hewale" method="POST">
+    <Form action="https://formspree.io/f/mqakqbqb" method="POST">
       <Form.Group className="mb-3">
         <Form.Label>First Name</Form.Label>
         <Form.Control
