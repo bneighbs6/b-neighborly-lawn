@@ -51,7 +51,6 @@ code {
   display: flex;
   justify-content: center; /* Center the logo on the page */
   align-items: center; /* Center vertically */
-  height: 30vh;
 }
 
 .logo {
