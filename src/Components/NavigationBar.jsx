@@ -1,24 +1,71 @@
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 import { Button, Nav, Navbar } from "react-bootstrap";
-import { Link } from 'react-scroll'; // Import Link from react-scroll
+import { Link } from "react-scroll"; // Import Link from react-scroll
 
 function NavigationBar() {
   return (
-    <Navbar expand="md" variant='light'>
+    <Navbar expand="md" variant="light">
       <Container>
-        <Nav className='mx-auto'>
-            <Nav.Link as={Link} to="home" smooth={true} duration={500}>
-                Home
+        <Nav className="mx-auto">
+          <Button
+            variant="primary"
+            style={{ backgroundColor: "#003f85", border: "none" }}
+          >
+            <Nav.Link
+              as={Link}
+              to="home"
+              smooth={true}
+              duration={500}
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Home
             </Nav.Link>
-            <Nav.Link as={Link} to="services" smooth={true} duration={500}>
-                Services
+          </Button>
+
+          <Button
+            variant="primary"
+            style={{ backgroundColor: "#003f85", border: "none" }}
+          >
+            <Nav.Link
+              as={Link}
+              to="home"
+              smooth={true}
+              duration={500}
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Services
             </Nav.Link>
-            <Nav.Link as={Link} to="about" smooth={true} duration={500}>
-                About
+          </Button>
+
+          <Button
+            variant="primary"
+            style={{ backgroundColor: "#003f85", border: "none" }}
+          >
+            <Nav.Link
+              as={Link}
+              to="home"
+              smooth={true}
+              duration={500}
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              About
             </Nav.Link>
-            <Nav.Link as={Link} to="contact" smooth={true} duration={500}>
-                Contact
+          </Button>
+
+          <Button
+            variant="primary"
+            style={{ backgroundColor: "#003f85", border: "none" }}
+          >
+            <Nav.Link
+              as={Link}
+              to="home"
+              smooth={true}
+              duration={500}
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Contact
             </Nav.Link>
+          </Button>
         </Nav>
       </Container>
     </Navbar>

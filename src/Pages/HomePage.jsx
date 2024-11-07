@@ -26,7 +26,8 @@ function HomePage() {
                 <h4>Don't feel like shoveling snow all winter?</h4>
                 <p>
                   <Button
-                    style={{ backgroundColor: "#003f85" }}
+                    variant="primary"
+                    style={{ backgroundColor: "#003f85", border: "none" }}
                     onClick={handleClick}
                   >
                     Click Here
@@ -42,7 +43,8 @@ function HomePage() {
                 <h4>Tired of mowing your lawn?</h4>
                 <p>
                   <Button
-                    style={{ backgroundColor: "#003f85" }}
+                    variant="primary"
+                    style={{ backgroundColor: "#003f85", border: "none" }}
                     onClick={handleClick}
                   >
                     Click Here

@@ -110,7 +110,8 @@ function RequestForm() {
       <Form.Group className="mb-3">
         <div id="dropdown-menu">
           <Dropdown onSelect={handleChooseServiceChange}>
-            <Dropdown.Toggle style={{ backgroundColor: "#003f85" }}>
+            <Dropdown.Toggle variant="primary"
+            style={{ backgroundColor: "#003f85", border: "none" }}>
               {serviceChoice || "* Choose an Option"}
             </Dropdown.Toggle>
             <Dropdown.Menu>
@@ -133,7 +134,8 @@ function RequestForm() {
         ></Form.Control>
       </Form.Group>
       <Form.Group>
-        <Button type="submit" style={{ backgroundColor: "#003f85" }}>
+        <Button variant="primary"
+            style={{ backgroundColor: "#003f85", border: "none" }}>
           Submit
         </Button>
       </Form.Group>
