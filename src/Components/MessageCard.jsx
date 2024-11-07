@@ -4,7 +4,7 @@ import { Button, Card, Container, Row, Col } from "react-bootstrap";
 function MessageCard({ title, subject, service }) {
     // Modify handleClick to scroll to the request form
     function handleClick() {
-        alert("This will take you to our request form. Click OK to continue.");
+        console.log("Click Here clicked. Should take user to request form on the web page.")
         const requestFormSection = document.getElementById("request-form");
         if (requestFormSection) {
             requestFormSection.scrollIntoView({ behavior: "smooth" });
