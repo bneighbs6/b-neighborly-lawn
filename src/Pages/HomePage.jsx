@@ -14,14 +14,15 @@ function HomePage() {
       <div className="home-header">
         <h1>Ready to hire a professional to handle your lawn?</h1>
       </div>
-      <Container>
+      <Container className="mb-5">
         <Row>
-          <Col>
+          <Col className="message-cards-col">
             <MessageCard
               title={"'I don't want to shovel my driveway'"}
               subject={"Let us do it for you."}
               service={"snow shoveling"}
             />
+            <br></br>
             <MessageCard
               title={"'I don't want to mow my lawn'"}
               subject={"Let us do it for you."}
@@ -32,7 +33,7 @@ function HomePage() {
       </Container>
 
       <Container id="request-form">
-        <Col>
+        <Col className="mb-5">
           <div>
             <RequestForm />
           </div>
