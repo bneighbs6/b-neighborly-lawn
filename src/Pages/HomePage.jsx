@@ -41,15 +41,15 @@ function HomePage() {
 
       <Container>
         <Row>
-          <Col sm={12} md={4} id="services">
+          <Col sm={12} md={6} id="services">
             <ServicePage />
           </Col>
-          <Col sm={12} md={4} id="about">
+          <Col sm={12} md={6} id="about">
             <AboutPage />
           </Col>
-          <Col sm={12} md={4} id="contact">
+          {/* <Col sm={12} md={4} id="contact">
             <ContactPage />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </>
