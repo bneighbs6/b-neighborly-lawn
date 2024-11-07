@@ -39,12 +39,12 @@ function NavigationBar() {
 
           <Nav.Link
             as={Link}
-            to="contact"
+            to="request-form"
             smooth={true}
             duration={500}
             style={{ color: "white", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}
           >
-            Contact
+            Request a Quote
           </Nav.Link>
         </Nav>
       </Container>
