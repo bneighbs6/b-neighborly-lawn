@@ -5,7 +5,8 @@ import MessageCard from "../Components/MessageCard";
 import ServicePage from "./ServicePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AboutPage from "./AboutPage";
-import ContactPage from "./ContactPage";
+// import ContactPage from "./ContactPage";
+import MarketingSection from "../Components/MarketingSection";
 
 function HomePage() {
 
@@ -14,6 +15,7 @@ function HomePage() {
       <div className="home-header">
         <h1>Ready to hire a professional to handle your lawn?</h1>
       </div>
+
       <Container className="mb-5">
         <Row>
           <Col className="message-cards-col">
@@ -53,6 +55,10 @@ function HomePage() {
           </Col> */}
         </Row>
       </Container>
+
+      {/* <Container>
+        <MarketingSection />
+      </Container> */}
     </>
   );
 }
