@@ -4,6 +4,8 @@ import RequestForm from "../Components/RequestForm";
 import MessageCard from "../Components/MessageCard";
 import ServicePage from "./ServicePage";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AboutPage from "./AboutPage";
+import ContactPage from "./ContactPage";
 
 function HomePage() {
 
@@ -37,26 +39,16 @@ function HomePage() {
         </Col>
       </Container>
 
-      <Container id="services">
+      <Container>
         <Row>
-          <Col>
+          <Col sm={12} md={4} id="services">
             <ServicePage />
           </Col>
-        </Row>
-      </Container>
-
-      <Container id="about">
-        <Row>
-          <Col>
-            <h1>About Area</h1>
+          <Col sm={12} md={4} id="about">
+            <AboutPage />
           </Col>
-        </Row>
-      </Container>
-
-      <Container id="contact">
-        <Row>
-          <Col>
-            <h1>Contact Area</h1>
+          <Col sm={12} md={4} id="contact">
+            <ContactPage />
           </Col>
         </Row>
       </Container>

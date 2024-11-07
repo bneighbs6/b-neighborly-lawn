@@ -1,9 +1,22 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 
 function AboutPage() {
-    return (
-        <h2>This is the About Page.</h2>
-    )
+  return (
+    <>
+      <div className="about-page text-center">
+        <Card>
+        <h2>About</h2>
+        <p>
+          B. Neighborly Lawn Services was established by the owner, Brett
+          Neighbors. He strives to offer the Flathead Valley the most
+          professional lawn care service possible. With year-round services
+          offered, there is no need that cannot be accomplished.
+        </p>
+        </Card>
+      </div>
+    </>
+  );
 }
 
-export default AboutPage; 
+export default AboutPage;
