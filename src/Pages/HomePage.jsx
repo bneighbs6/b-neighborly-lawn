@@ -2,15 +2,11 @@ import React from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import RequestForm from "../Components/RequestForm";
+import MessageCard from "../Components/MessageCard";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function HomePage() {
   const navigate = useNavigate(); 
-
-  function handleClick() {
-    alert("This will take you to our request form. Click OK to continue.");
-    navigate("/request-form");
-  }
 
   return (
     <>
@@ -20,46 +16,26 @@ function HomePage() {
       <Container>
         <Row>
           <Col>
-            <Card className="home-page-card">
-              <Card.Body>
-                <h2>Winter Is Coming</h2>
-                <h4>Don't feel like shoveling snow all winter?</h4>
-                <p>
-                  <Button
-                    variant="primary"
-                    style={{ backgroundColor: "#003f85", border: "none" }}
-                    onClick={handleClick}
-                  >
-                    Click Here
-                  </Button>
-                  to receive a quote for simple snow shoveling done
-                  professionally.
-                </p>
-              </Card.Body>
-            </Card>
-            <Card className="home-page-card">
-              <Card.Body>
-                <h2>We want to mow your lawn</h2>
-                <h4>Tired of mowing your lawn?</h4>
-                <p>
-                  <Button
-                    variant="primary"
-                    style={{ backgroundColor: "#003f85", border: "none" }}
-                    onClick={handleClick}
-                  >
-                    Click Here
-                  </Button>
-                  to receive a quote for lawn mowing done professionally.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <div>
-              <RequestForm />
-            </div>
+            <MessageCard
+              title={"'I don't want to shovel my driveway'"}
+              subject={"Let us do it for you."}
+              service={"snow shoveling"}
+            />
+            <MessageCard
+              title={"'I don't want to mow my lawn'"}
+              subject={"Let us do it for you."}
+              service={"lawn mowing"}
+            />
           </Col>
         </Row>
+      </Container>
+
+      <Container id="request-form">
+        <Col>
+          <div>
+            <RequestForm />
+          </div>
+        </Col>
       </Container>
 
       <Container id="services">
