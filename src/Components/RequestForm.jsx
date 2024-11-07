@@ -16,6 +16,7 @@ function RequestForm() {
 
   async function handleSubmit(e) {
     e.preventDefault(); // Prevent the default form submission
+    console.log("Submit clicked.")
 
     // Send form data to Formspree
     const response = await fetch("https://formspree.io/f/mqakqbqb", {
@@ -147,6 +148,7 @@ function RequestForm() {
           <Button
             variant="primary"
             style={{ backgroundColor: "#003f85", border: "none" }}
+            type="submit"
           >
             Submit
           </Button>
