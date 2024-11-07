@@ -46,6 +46,14 @@ code {
   margin-top: auto; 
 }
 
+.custom-btn {
+  background-color: #003f85;
+  border: 100px solid #0ced77;
+  color: white;
+  padding: 0; 
+  display: inline-block;
+}
+
 /* Logo css */
 .logo-container {
   display: flex;

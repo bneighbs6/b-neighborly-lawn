@@ -5,10 +5,10 @@ import RequestForm from "../Components/RequestForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function HomePage() {
-  const navigate= useNavigate(); 
+  const navigate = useNavigate(); 
 
   function handleClick() {
-    alert("This will take you to our request form. Click OK to continue.")
+    alert("This will take you to our request form. Click OK to continue.");
     navigate("/request-form");
   }
 
@@ -53,9 +53,33 @@ function HomePage() {
             </Card>
           </Col>
           <Col>
-          <div>
-            <RequestForm />
-          </div>
+            <div>
+              <RequestForm />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container id="services">
+        <Row>
+          <Col>
+            <h1>Services Area</h1>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container id="about">
+        <Row>
+          <Col>
+            <h1>About Area</h1>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container id="contact">
+        <Row>
+          <Col>
+            <h1>Contact Area</h1>
           </Col>
         </Row>
       </Container>
