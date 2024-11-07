@@ -5,32 +5,21 @@ function Footer() {
     <>
       <footer className="bg-light border border-dark">
         <div className="row">
-          <div className="col-sm-12 col-md-4 text-center">
-            <h3>Contact Info</h3>
+          <div className="footer-faq-section col-sm-12 col-md-6 text-center">
+            <h2>FAQ</h2>
+            <h6>Why B. Neighborly Lawn Services?</h6>
             <p>
-              Phone: (702)622-8998
+              If you're looking for a
+              professional job completed for an honest cost, look no further.
             </p>
-            <p>
-            Email: b.neighborlylawnservices@gmail.com
-            </p>
+            <h6>What Will This Cost Me?</h6>
+            <p>The answer to this question depends on the size of your lawn or driveway. We will be happy to provide a quote if you fill out the request form.</p>
           </div>
-          <div className="col-sm-12 col-md-4 text-center">
-            <h3>FAQ</h3>
-            <p>
-              Why a professional? 
-            </p>
-          </div>
-          <div className="col-sm-12 col-md-4 text-center">
-            <h3>About the Creator</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+
+          <div className="footer-contact-section col-sm-12 col-md-6 text-center">
+            <h2>Contact Info</h2>
+            <h6>Phone: (702)622-8998</h6>
+            <h6>Email: b.neighborlylawnservices@gmail.com</h6>
           </div>
         </div>
       </footer>

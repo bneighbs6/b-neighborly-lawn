@@ -55,6 +55,30 @@ code {
   display: inline-block;
 }
 
+.footer-faq-section {
+  border-right: 5px solid #003f85;
+}
+
+.footer-contact-section {
+  margin: auto;
+  padding: 30px; 
+}
+
+/* Pages CSS */
+
+.services-page, .about-page, .contact-page {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 200px; /* Set a minimum height for the cards */
+  max-height: fit-content;
+}
+
+.card {
+  width: 100%; /* Make the card take full width of the column */
+  text-align: center; /* Center text inside the card */
+}
+
 /* Logo css */
 .logo-container {
   display: flex;

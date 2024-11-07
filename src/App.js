@@ -31,9 +31,6 @@ function App() {
 
         <Routes>
           <Route exact={true} path="/" element={<HomePage />}></Route>
-          {/* <Route path="/services" element={<ServicePage />}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
-          <Route path="/request-form" element={<RequestForm />}></Route> */}
         </Routes>
 
         <div id="footer">
