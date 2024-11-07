@@ -1,12 +1,11 @@
 import React from "react";
-import { Button, Card, Container, Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 import RequestForm from "../Components/RequestForm";
 import MessageCard from "../Components/MessageCard";
+import ServicePage from "./ServicePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function HomePage() {
-  const navigate = useNavigate(); 
 
   return (
     <>
@@ -41,7 +40,7 @@ function HomePage() {
       <Container id="services">
         <Row>
           <Col>
-            <h1>Services Area</h1>
+            <ServicePage />
           </Col>
         </Row>
       </Container>
