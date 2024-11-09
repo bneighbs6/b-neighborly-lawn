@@ -1,5 +1,5 @@
 import React from "react";
-import WinterMarketing from "../Winter Marketing copy.png";
+import WinterMarketing from "../media/Winter Marketing (2).png";
 
 function MarketingSection() {
     return (
