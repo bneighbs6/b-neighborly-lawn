@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 
-function MessageCard({ title, subject, service }) {
+function MessageCard({ title, subject, service, onSelectService }) {
     // Modify handleClick to scroll to the request form
     function handleClick() {
         console.log("Click Here clicked. Should take user to request form on the web page.")
@@ -9,6 +9,7 @@ function MessageCard({ title, subject, service }) {
         if (requestFormSection) {
             requestFormSection.scrollIntoView({ behavior: "smooth" });
         }
+        onSelectService(service);
     }
 
     return (

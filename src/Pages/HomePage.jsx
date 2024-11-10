@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import RequestForm from "../Components/RequestForm";
 import MessageCard from "../Components/MessageCard";
@@ -9,6 +9,11 @@ import AboutPage from "./AboutPage";
 import MarketingSection from "../Components/MarketingSection";
 
 function HomePage() {
+  const [selectedService, setSelectedService] = useState("");
+
+  const handleServiceSelection = (service) => {
+    setSelectedService(service);
+  }
 
   return (
     <>
@@ -23,12 +28,14 @@ function HomePage() {
               title={"'I don't want to shovel my driveway'"}
               subject={"Let us do it for you."}
               service={"snow shoveling"}
+              onSelectService={handleServiceSelection}
             />
             <br></br>
             <MessageCard
               title={"'I don't want to mow my lawn'"}
               subject={"Let us do it for you."}
               service={"lawn mowing"}
+              onSelectService={handleServiceSelection}
             />
           </Col>
         </Row>
@@ -37,7 +44,7 @@ function HomePage() {
       <Container id="request-form">
         <Col className="mb-5">
           <div>
-            <RequestForm />
+            <RequestForm selectedService={selectedService} />
           </div>
         </Col>
       </Container>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Dropdown, Form } from "react-bootstrap";
 
-function RequestForm() {
+function RequestForm({ selectedService }) {
   const initialFormState = {
     full_name: "",
     email: "",
@@ -14,9 +14,17 @@ function RequestForm() {
   const [form, setForm] = useState({ ...initialFormState });
   const [serviceChoice, setServiceChoice] = useState("");
 
+  // Automatically sets the service choice dropdown to the selected service from the message care
+  useEffect(() => {
+    if (selectedService) {
+      setServiceChoice(selectedService);
+      setForm((prevForm) => ({ ...prevForm, choose_service: selectedService }));
+    }
+  }, [selectedService]);
+
   async function handleSubmit(e) {
     e.preventDefault(); // Prevent the default form submission
-    console.log("Submit clicked.")
+    console.log("Submit clicked.");
 
     // Send form data to Formspree
     const response = await fetch("https://formspree.io/f/mqakqbqb", {
