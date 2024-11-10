@@ -127,9 +127,12 @@ function RequestForm({ selectedService }) {
                 variant="primary"
                 style={{ backgroundColor: "#003f85", border: "none" }}
               >
-                {serviceChoice || "* Choose an Option"}
+                {serviceChoice || "* Choose a Service"}
               </Dropdown.Toggle>
               <Dropdown.Menu>
+                <Dropdown.Item disabled>
+                  * Choose a Service
+                </Dropdown.Item>
                 <Dropdown.Item eventKey={"Lawn Mowing"}>
                   Lawn Mowing
                 </Dropdown.Item>
