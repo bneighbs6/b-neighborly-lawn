@@ -16,7 +16,7 @@ function HomePage() {
         <h1>Ready to hire a professional to handle your lawn?</h1>
       </div>
 
-      <Container className="mb-5">
+      <Container className="mb-5" id="home">
         <Row>
           <Col className="message-cards-col">
             <MessageCard
