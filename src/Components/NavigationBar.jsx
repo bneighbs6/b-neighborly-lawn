@@ -12,7 +12,7 @@ function NavigationBar() {
             to="home"
             smooth={true}
             duration={500}
-            style={{ color: "white", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}
+            style={{ color: "white", textAlign: "center", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}
           >
             Home
           </Nav.Link>
@@ -22,8 +22,7 @@ function NavigationBar() {
             to="services"
             smooth={true}
             duration={500}
-            style={{ color: "white", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}
-          >
+            style={{ color: "white", textAlign: "center", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}          >
             Services
           </Nav.Link>
 
@@ -32,8 +31,7 @@ function NavigationBar() {
             to="about"
             smooth={true}
             duration={500}
-            style={{ color: "white", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}
-          >
+            style={{ color: "white", textAlign: "center", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}          >
             About
           </Nav.Link>
 
@@ -42,8 +40,7 @@ function NavigationBar() {
             to="request-form"
             smooth={true}
             duration={500}
-            style={{ color: "white", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}
-          >
+            style={{ color: "white", textAlign: "center", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}          >
             Request a Quote
           </Nav.Link>
         </Nav>
