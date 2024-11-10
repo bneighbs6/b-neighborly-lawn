@@ -27,14 +27,14 @@ function HomePage() {
             <MessageCard
               title={"'I don't want to shovel my driveway'"}
               subject={"Let us do it for you."}
-              service={"snow shoveling"}
+              service={"Snow Shoveling"}
               onSelectService={handleServiceSelection}
             />
             <br></br>
             <MessageCard
               title={"'I don't want to mow my lawn'"}
               subject={"Let us do it for you."}
-              service={"lawn mowing"}
+              service={"Lawn Mowing"}
               onSelectService={handleServiceSelection}
             />
           </Col>
