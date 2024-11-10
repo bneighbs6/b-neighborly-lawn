@@ -11,7 +11,7 @@ function AboutPage() {
           B. Neighborly Lawn Services was established by the owner, Brett
           Neighbors. He strives to offer the Flathead Valley the most
           professional lawn care service possible. With year-round services
-          offered, B. Neighborly can meet all of your needs.
+          offered, B. Neighborly can meet all of your lawn care needs.
         </p>
         </Card>
       </div>
