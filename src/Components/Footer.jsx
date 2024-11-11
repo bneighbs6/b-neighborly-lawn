@@ -18,8 +18,8 @@ function Footer() {
 
           <div className="footer-contact-section col-sm-12 col-md-6 text-center">
             <h2>Contact Info</h2>
-            <h6>Phone: (702)622-8998</h6>
             <h6>Email: b.neighborlylawnservices@gmail.com</h6>
+            <h6>Instagram: @b.neighborlylawns</h6>
           </div>
         </div>
       </footer>
