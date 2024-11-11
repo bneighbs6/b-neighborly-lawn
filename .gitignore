@@ -9,7 +9,7 @@
 /coverage
 
 # media files
-public/media/
+public
 invoices
 
 # production
