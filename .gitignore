@@ -10,6 +10,7 @@
 
 # media files
 public/media/
+invoices
 
 # production
 /build

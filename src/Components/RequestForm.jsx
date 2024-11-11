@@ -8,11 +8,13 @@ function RequestForm({ selectedService }) {
     street_address: "",
     zip_code: "",
     choose_service: "",
+    salt_application: "",
     request: "",
   };
 
   const [form, setForm] = useState({ ...initialFormState });
   const [serviceChoice, setServiceChoice] = useState("");
+  const [saltAppChoice, setSaltAppChoice] = useState("");
 
   // Automatically sets the service choice dropdown to the selected service from the message care
   useEffect(() => {
@@ -66,6 +68,12 @@ function RequestForm({ selectedService }) {
   function handleChooseServiceChange(eventKey) {
     setServiceChoice(eventKey);
     setForm({ ...form, choose_service: eventKey });
+  }
+
+  function handleSaltApplicationChange(eventKey) {
+    setSaltAppChoice(eventKey);
+    setForm({ ...form, salt_application: eventKey });
+    // Need to set form's value to the event key... but it's not in the initalFormState??
   }
 
   function handleRequestChange(e) {
@@ -130,9 +138,7 @@ function RequestForm({ selectedService }) {
                 {serviceChoice || "* Choose a Service"}
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item disabled>
-                  * Choose a Service
-                </Dropdown.Item>
+                <Dropdown.Item disabled>* Choose a Service</Dropdown.Item>
                 <Dropdown.Item eventKey={"Lawn Mowing"}>
                   Lawn Mowing
                 </Dropdown.Item>
@@ -142,6 +148,25 @@ function RequestForm({ selectedService }) {
               </Dropdown.Menu>
             </Dropdown>
           </div>
+
+          {/* Conditionally render the Salt Application dropdown */}
+          {serviceChoice === "Snow Shoveling" && (
+            <div className="my-3">
+              <Dropdown onSelect={handleSaltApplicationChange}>
+                <Dropdown.Toggle variant="secondary">
+                  {saltAppChoice || "Select Salt Application"}
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item disabled>
+                    Select Salt Application
+                  </Dropdown.Item>
+                  <Dropdown.Item eventKey={"Yes"}>Yes</Dropdown.Item>
+                  <Dropdown.Item eventKey={"No"}>No</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+          )}
+          
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Tell us what you are looking for from us</Form.Label>
