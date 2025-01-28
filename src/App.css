@@ -1,3 +1,14 @@
 .App-header {
   text-align: center;
 }
+
+.nav-link {
+  color: "white";
+  text-align: center;
+  background-color: #003f85;
+   padding: 10px 20px;
+    margin: 5px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    cursor: pointer;
+}

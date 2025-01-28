@@ -12,6 +12,7 @@ function NavigationBar() {
             to="logo" // Brings user to the top of the webpage if clicked
             smooth={true}
             duration={500}
+            className="nav-link"
             style={{ color: "white", textAlign: "center", backgroundColor: "#003f85", padding: "10px 20px", margin: "5px", borderRadius: "5px", textDecoration: "none" }}
           >
             Home
