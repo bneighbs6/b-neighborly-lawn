@@ -43,7 +43,6 @@ code {
 .uniform-btn-nav {
     width:max-content; /* Fixed width for all buttons */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
     background-color: #0ced77;
     color: black;
     border: 2px solid black;

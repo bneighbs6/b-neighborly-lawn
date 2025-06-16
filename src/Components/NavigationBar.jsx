@@ -13,7 +13,7 @@ function NavigationBar() {
         <Nav.Link href="/services">
           <button className="uniform-btn-nav">Services</button>
         </Nav.Link>
-        <Nav.Link href="/request">
+        <Nav.Link href="/request-form">
           <button className="uniform-btn-nav">Request</button>
         </Nav.Link>
         <Nav.Link href="/about">
