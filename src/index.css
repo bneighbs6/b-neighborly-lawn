@@ -35,9 +35,24 @@ code {
   padding: 20px 20px;
 }
 
-#nav-bar {
-  background-color: #0ced77;
+.nav-bar {
+  background-color: #003f85;
   color: white; 
+}
+
+.uniform-btn-nav {
+    width:max-content; /* Fixed width for all buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    background-color: #0ced77;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    margin: 5px; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 #footer {

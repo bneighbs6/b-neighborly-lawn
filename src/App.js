@@ -8,6 +8,9 @@ import HomePage from "../src/Pages/HomePage";
 // import ServicePage from '../src/Pages/ServicePage';
 // import RequestForm from './Components/RequestForm';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ServicePage from "./Pages/ServicePage";
+import AboutPage from "./Pages/AboutPage";
+import RequestForm from "./Components/RequestForm";
 // import AboutPage from '../src/Pages/AboutPage';
 
 // TODO: Get rid of all routes and make this a single page site
@@ -21,16 +24,19 @@ function App() {
           <Header />
         </div>
 
-        <div id="nav-bar">
+        {/* <div id="nav-bar">
           <NavigationBar />
-        </div>
+        </div> */}
 
-        <div id="logo">
+        {/* <div id="logo">
           <Logo />
-        </div>
+        </div> */}
 
         <Routes>
           <Route exact={true} path="/" element={<HomePage />}></Route>
+          <Route exact={true} path="/request-form" element={<RequestForm />}></Route>
+          <Route exact={true} path="/services" element={<ServicePage />}></Route>
+          <Route exact={true} path="/about" element={<AboutPage />}></Route> 
         </Routes>
 
         <br></br>
