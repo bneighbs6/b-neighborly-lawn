@@ -34,9 +34,9 @@ function App() {
 
         <Routes>
           <Route exact={true} path="/" element={<HomePage />}></Route>
-          <Route exact={true} path="/request-form" element={<RequestForm />}></Route>
-          <Route exact={true} path="/services" element={<ServicePage />}></Route>
-          <Route exact={true} path="/about" element={<AboutPage />}></Route> 
+          <Route path="/request-form" element={<RequestForm />}></Route>
+          <Route path="/services" element={<ServicePage />}></Route>
+          <Route path="/about" element={<AboutPage />}></Route> 
         </Routes>
 
         <br></br>
