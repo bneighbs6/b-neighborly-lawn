@@ -25,14 +25,14 @@ function HomePage() {
         <Row>
           <Col className="message-cards-col">
             <MessageCard
-              title={"'I don't want to shovel my driveway'"}
+              title={"'I need help shoveling my driveway.'"}
               subject={"Let us do it for you."}
               service={"Snow Shoveling"}
               onSelectService={handleServiceSelection}
             />
             <br></br>
             <MessageCard
-              title={"'I don't want to mow my lawn'"}
+              title={"'I need help mowing my lawn.'"}
               subject={"Let us do it for you."}
               service={"Lawn Mowing"}
               onSelectService={handleServiceSelection}
