@@ -5,7 +5,6 @@ import MessageCard from "../Components/MessageCard";
 import ServicePage from "./ServicePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AboutPage from "./AboutPage";
-// import ContactPage from "./ContactPage";
 import MarketingSection from "../Components/MarketingSection";
 
 function HomePage() {
@@ -13,61 +12,49 @@ function HomePage() {
 
   const handleServiceSelection = (service) => {
     setSelectedService(service);
-  }
+  };
 
   return (
     <>
-      <div className="home-header">
-        <h1>Ready to hire a professional to handle your lawn?</h1>
+      <div className="home-header text-center py-5">
+        <Container>
+          <h1 className="display-4 fw-bold">
+            Your Lawn & Driveway, Handled by Pros
+          </h1>
+          <p className="lead text-muted mt-3">
+            Reliable, affordable, and fast services to keep your outdoor space
+            pristine — all year round.
+          </p>
+        </Container>
       </div>
 
-      <Container className="mb-5" id="home">
-        <Row>
-          <Col className="message-cards-col">
+      <Container className="mb-5 mt-4">
+        <Row className="g-4">
+          <Col md={6} className="d-flex">
             <MessageCard
-              title={"'I need help mowing my lawn.'"}
-              subject={"Let us do it for you."}
+              title={"Lawn Mowing Services"}
+              subject={
+                "Keep your lawn looking fresh and clean without lifting a finger."
+              }
               service={"Lawn Mowing"}
               onSelectService={handleServiceSelection}
             />
-            <br></br>
+          </Col>
+          <Col md={6} className="d-flex">
             <MessageCard
-              title={"'I need help shoveling my driveway.'"}
-              subject={"Let us do it for you."}
+              title={"Snow Shoveling Services"}
+              subject={
+                "Clear your driveway and walkways quickly and safely after any storm."
+              }
               service={"Snow Shoveling"}
               onSelectService={handleServiceSelection}
             />
           </Col>
         </Row>
       </Container>
-      <br></br>
-      {/* <Container id="request-form">
-        <Col className="mb-5">
-          <div>
-            <RequestForm selectedService={selectedService} />
-          </div>
-        </Col>
-      </Container> */}
-      <br></br>
-      <Container>
-        <Row>
-          {/* <Col sm={12} md={6} id="services">
-            <ServicePage />
-          </Col> */}
-          {/* <Col sm={12} md={6} id="about">
-            <AboutPage />
-          </Col> */}
-          {/* <Col sm={12} md={4} id="contact">
-            <ContactPage />
-          </Col> */}
-        </Row>
-      </Container>
-
-      {/* <Container>
-        <MarketingSection />
-      </Container> */}
     </>
   );
 }
 
 export default HomePage;
+
