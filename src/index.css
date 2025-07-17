@@ -110,6 +110,7 @@ code {
   display: flex;
   justify-content: center; /* Center the logo on the page */
   align-items: center; /* Center vertically */
+  background-color: #003f85;
 }
 
 .logo {

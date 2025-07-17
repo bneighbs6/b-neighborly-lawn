@@ -25,22 +25,22 @@ function HomePage() {
         <Row>
           <Col className="message-cards-col">
             <MessageCard
-              title={"'I need help shoveling my driveway.'"}
-              subject={"Let us do it for you."}
-              service={"Snow Shoveling"}
-              onSelectService={handleServiceSelection}
-            />
-            <br></br>
-            <MessageCard
               title={"'I need help mowing my lawn.'"}
               subject={"Let us do it for you."}
               service={"Lawn Mowing"}
               onSelectService={handleServiceSelection}
             />
+            <br></br>
+            <MessageCard
+              title={"'I need help shoveling my driveway.'"}
+              subject={"Let us do it for you."}
+              service={"Snow Shoveling"}
+              onSelectService={handleServiceSelection}
+            />
           </Col>
         </Row>
       </Container>
-<br></br>
+      <br></br>
       {/* <Container id="request-form">
         <Col className="mb-5">
           <div>
@@ -48,7 +48,7 @@ function HomePage() {
           </div>
         </Col>
       </Container> */}
-<br></br>
+      <br></br>
       <Container>
         <Row>
           {/* <Col sm={12} md={6} id="services">
