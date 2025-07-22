@@ -35,7 +35,7 @@ function Footer() {
                   size="2x"
                 />
               </a>
-              <strong>Email: </strong> {/* Add a space */}
+              {/* <strong>Email: </strong> Add a space */}
               <a
                 href="mailto:b.neighborlylawnservices@gmail.com"
                 className="text-decoration-none text-dark"
@@ -55,7 +55,7 @@ function Footer() {
                   size="2x"
                 />
               </a>
-              <strong>Instagram: </strong> {/* Add a space */}
+              {/* <strong>Instagram: </strong> Add a space */}
               <a
                 href="https://instagram.com/b.neighborlylawns"
                 target="_blank"
