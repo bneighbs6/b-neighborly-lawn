@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import RequestForm from "../Components/RequestForm";
+// import RequestForm from "../Components/RequestForm";
 import MessageCard from "../Components/MessageCard";
-import ServicePage from "./ServicePage";
+// import ServicePage from "./ServicePage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AboutPage from "./AboutPage";
-import MarketingSection from "../Components/MarketingSection";
+// import AboutPage from "./AboutPage";
+// import MarketingSection from "../Components/MarketingSection";
 
 function HomePage() {
   const [selectedService, setSelectedService] = useState("");
