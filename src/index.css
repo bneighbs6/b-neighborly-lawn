@@ -123,3 +123,11 @@ code {
   width: auto;
 }
 
+.instagram-icon,
+.email-icon {
+  color: #0ced77;
+  margin-right: 8px; /* optional spacing to separate from label */
+  vertical-align: middle;
+}
+
+
