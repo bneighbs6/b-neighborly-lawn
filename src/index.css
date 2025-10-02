@@ -40,6 +40,11 @@ code {
   color: white; 
 }
 
+.mobile-dropdown-nav { 
+  background-color: #0ced77 !important;
+  border: none !important;
+}
+
 .uniform-btn-nav {
     width:max-content; /* Fixed width for all buttons */
     border-radius: 5px; /* Rounded corners */
