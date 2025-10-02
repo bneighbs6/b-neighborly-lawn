@@ -14,6 +14,7 @@ function NavigationBar() {
     <Navbar expand="md" variant="none">
       <Container>
         {isMobile ? (
+          // Mobile Navigation
           <Dropdown>
             <Dropdown.Toggle className="mobile-dropdown-nav">
               <FontAwesomeIcon icon={faBars} />
@@ -26,6 +27,7 @@ function NavigationBar() {
             </Dropdown.Menu>
           </Dropdown>
         ) : (
+          // Desktop Navigation
           <Nav className="mx-auto">
             <Nav.Link href="/">
               <button className="uniform-btn-nav">Home</button>
