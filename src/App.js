@@ -5,16 +5,10 @@ import Footer from "./Components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./Components/Logo";
 import HomePage from "../src/Pages/HomePage";
-// import ServicePage from '../src/Pages/ServicePage';
-// import RequestForm from './Components/RequestForm';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ServicePage from "./Pages/ServicePage";
 import AboutPage from "./Pages/AboutPage";
 import RequestForm from "./Components/RequestForm";
-// import AboutPage from '../src/Pages/AboutPage';
-
-// TODO: Get rid of all routes and make this a single page site
-// TODO: Fix spacing of Home Page Cards on a phone screen
 
 function App() {
   return (
