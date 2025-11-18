@@ -116,6 +116,7 @@ function RequestForm({ selectedService }) {
                         <Dropdown.Item disabled>* Choose a Service</Dropdown.Item>
                         <Dropdown.Item eventKey="Lawn Mowing">Lawn Mowing</Dropdown.Item>
                         <Dropdown.Item eventKey="Snow Shoveling">Snow Shoveling</Dropdown.Item>
+                        <Dropdown.Item eventKey="Gutter Cleaning" disabled>Gutter Cleaning (Coming Soon)</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Form.Group>

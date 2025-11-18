@@ -38,6 +38,7 @@ function HomePage() {
               }
               service={"Lawn Mowing"}
               onSelectService={handleServiceSelection}
+              disabled={false}
             />
           </Col>
           <Col md={4} className="d-flex">
@@ -48,6 +49,7 @@ function HomePage() {
               }
               service={"Snow Shoveling"}
               onSelectService={handleServiceSelection}
+              disabled={false}
             />
           </Col>
           <Col md={4} className="d-flex">
