@@ -30,7 +30,7 @@ function HomePage() {
 
       <Container className="mb-5 mt-4">
         <Row className="g-4">
-          <Col md={6} className="d-flex">
+          <Col md={4} className="d-flex">
             <MessageCard
               title={"Lawn Mowing Services"}
               subject={
@@ -40,7 +40,7 @@ function HomePage() {
               onSelectService={handleServiceSelection}
             />
           </Col>
-          <Col md={6} className="d-flex">
+          <Col md={4} className="d-flex">
             <MessageCard
               title={"Snow Shoveling Services"}
               subject={
@@ -49,6 +49,15 @@ function HomePage() {
               service={"Snow Shoveling"}
               onSelectService={handleServiceSelection}
             />
+          </Col>
+          <Col md={4} className="d-flex">
+            <MessageCard
+            title={"Gutter Cleaning Services"}
+            subject={"Prevent clogs and water damage with fast, reliable gutter cleaning that keeps your home protected."}
+            service={"Gutter Cleaning"}
+            onSelectService={handleServiceSelection}
+            disabled={true}
+            ></MessageCard>
           </Col>
         </Row>
       </Container>
