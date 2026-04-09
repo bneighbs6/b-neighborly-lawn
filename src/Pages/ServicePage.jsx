@@ -17,6 +17,9 @@ function ServicePage() {
                   <li className="mt-3">
                     <strong>Snow Shoveling</strong> – driveway and walkway clearing after snowfall
                   </li>
+                  <li className="mt-3">
+                    <strong>Gutter Cleaning</strong> - Coming Soon
+                  </li>
                 </ul>
               </Card.Body>
             </Card>
