@@ -23,7 +23,7 @@ function MessageCard({ title, subject, service, onSelectService, disabled }) {
               Coming Soon
             </Button>
           ) : (
-            <Nav.Link href="/request-form" className="d-inline p-0" onClick={handleClick}>
+            <Nav.Link href="/request-a-quote" className="d-inline p-0" onClick={handleClick}>
               <Button
                 variant="primary"
                 style={{ backgroundColor: "#003f85", border: "none" }}
