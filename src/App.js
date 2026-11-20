@@ -28,7 +28,7 @@ function App() {
 
         <Routes>
           <Route exact={true} path="/" element={<HomePage />}></Route>
-          <Route path="/request-form" element={<RequestForm />}></Route>
+          <Route path="/request-a-quote" element={<RequestForm />}></Route>
           <Route path="/services" element={<ServicePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route> 
         </Routes>

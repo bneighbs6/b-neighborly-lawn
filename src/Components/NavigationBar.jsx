@@ -22,7 +22,7 @@ function NavigationBar() {
             <Dropdown.Menu>
               <Dropdown.Item href="/">Home</Dropdown.Item>
               <Dropdown.Item href="/services">Services</Dropdown.Item>
-              <Dropdown.Item href="/request-form">Request</Dropdown.Item>
+              <Dropdown.Item href="/request-a-quote">Request A Quote</Dropdown.Item>
               <Dropdown.Item href="/about">About</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -35,8 +35,8 @@ function NavigationBar() {
             <Nav.Link href="/services">
               <button className="uniform-btn-nav">Services</button>
             </Nav.Link>
-            <Nav.Link href="/request-form">
-              <button className="uniform-btn-nav">Request</button>
+            <Nav.Link href="/request-a-quote">
+              <button className="uniform-btn-nav">Request A Quote</button>
             </Nav.Link>
             <Nav.Link href="/about">
               <button className="uniform-btn-nav">About</button>
